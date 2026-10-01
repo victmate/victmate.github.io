@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="VICTMATE — Your mate on the road to victory. Useful software for individuals and companies: productivity for students, employees, business people and freelancers, and better language skills." />
+  <link rel="icon" href="data:image/jpeg;base64,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" />
+  <title>VICTMATE — Your mate on the road to victory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,800&display=swap" rel="stylesheet" />
+  <script>
+    /* In-memory theme: pick up system preference before first paint. */
+    (function(){try{var m=matchMedia('(prefers-color-scheme: light)');if(m&&m.matches){document.documentElement.setAttribute('data-theme','light');}}catch(e){}})();
+  </script>
+  <style>
+    /* ============ Tokens ============ */
+    :root{
+      --font-display:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+      --font-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+      --radius-l:18px; --radius-m:12px; --radius-s:8px;
+      --wrap:1180px;
+      --shadow:0 20px 60px -20px rgba(0,0,0,.45);
+    }
+    :root, :root[data-theme="dark"]{
+      color-scheme:dark;
+      --bg:#0b0a0a;
+      --bg-2:#120f0f;
+      --surface:#171313;
+      --surface-2:#1e1a19;
+      --ink:#f5f2ee;
+      --ink-strong:#fffdf9;
+      --muted:#b8b1a7;
+      --faint:#8b8479;
+      --line:#2a2524;
+      --accent:#e5383b;
+      --accent-deep:#ba181b;
+      --accent-soft:rgba(229,56,59,.12);
+      --accent-text:#ff6b5e;
+      --on-accent:#fffdf9;
+      --cover-btn:#0b0a0a;
+      --cover-btn-border:transparent;
+    }
+    @media (prefers-color-scheme: light){
+      :root:not([data-theme]){ --x:1; }
+    }
+    :root[data-theme="light"]{
+      color-scheme:light;
+      --bg:#faf9f7;
+      --bg-2:#f3f1ec;
+      --surface:#ffffff;
+      --surface-2:#f4f2ee;
+      --ink:#17140f;
+      --ink-strong:#000000;
+      --muted:#5a554c;
+      --faint:#8d877a;
+      --line:#e4dfd4;
+      --accent:#c1121f;
+      --accent-deep:#a50d1a;
+      --accent-soft:rgba(193,18,31,.08);
+      --accent-text:#c1121f;
+      --on-accent:#fffdf9;
+      --cover-btn:#17140f;
+      --cover-btn-border:transparent;
+      --shadow:0 20px 60px -28px rgba(23,20,15,.35);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+    body{
+      margin:0;
+      font-family:var(--font-body);
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.62;
+      font-size:1.0625rem;
+      -webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+    }
+    h1,h2,h3,.display{font-family:var(--font-display);line-height:1.05;letter-spacing:-.015em;margin:0}
+    p{margin:0 0 1em}
+    a{color:inherit}
+    img{max-width:100%}
+    .wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(1rem,4vw,2rem)}
+    section{padding:clamp(3.5rem,8vw,6rem) 0}
+
+    /* ============ Announcement ============ */
+    .announce{
+      background:var(--accent-deep);
+      color:#fff;
+      font-size:.92rem;
+      text-align:center;
+    }
+    .announce .wrap{display:flex;align-items:center;justify-content:center;gap:.6rem;padding-top:.55rem;padding-bottom:.55rem}
+    .announce a{font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+    .announce button{
+      background:transparent;border:0;color:#fff;font-size:1.2rem;line-height:1;cursor:pointer;opacity:.75;padding:0 .3rem;
+    }
+    .announce button:hover{opacity:1}
+
+    /* ============ Header ============ */
+    .site-header{
+      position:sticky;top:0;z-index:50;
+      background:color-mix(in srgb, var(--bg) 88%, transparent);
+      backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+      border-bottom:1px solid transparent;
+      transition:border-color .25s ease;
+    }
+    .site-header.scrolled{border-bottom-color:var(--line)}
+    .header-inner{display:flex;align-items:center;gap:1rem;min-height:70px;padding-top:.6rem;padding-bottom:.6rem}
+    .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;font-weight:800;font-family:var(--font-display);letter-spacing:.02em;font-size:1.15rem}
+    .brand-mark{
+      width:44px;height:44px;border-radius:10px;overflow:hidden;flex:none;
+      background:#000;box-shadow:0 4px 14px rgba(0,0,0,.35);
+    }
+    .brand-mark img{width:100%;height:100%;object-fit:cover;display:block}
+    .brand small{display:block;font-family:var(--font-body);font-weight:400;font-size:.68rem;color:var(--faint);letter-spacing:.22em;text-transform:uppercase}
+    .nav{margin-left:auto;display:flex;align-items:center;gap:1.4rem}
+    .nav a.nav-link{text-decoration:none;font-size:.95rem;color:var(--muted);font-weight:700;position:relative}
+    .nav a.nav-link:hover{color:var(--ink)}
+    .nav a.nav-link::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:2px;background:var(--accent);transition:right .2s ease}
+    .nav a.nav-link:hover::after{right:0}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+      font-family:var(--font-body);font-weight:700;font-size:.95rem;
+      padding:.72rem 1.35rem;border-radius:999px;border:1px solid transparent;
+      cursor:pointer;text-decoration:none;transition:transform .15s ease,box-shadow .2s ease,background .2s ease;
+      white-space:nowrap;
+    }
+    .btn-primary{background:var(--accent);color:var(--on-accent);box-shadow:0 8px 24px -8px var(--accent)}
+    .btn-primary:hover{background:var(--accent-deep);transform:translateY(-1px)}
+    .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+    .btn-ghost:hover{border-color:var(--accent);color:var(--accent-text)}
+    .icon-btn{
+      width:42px;height:42px;border-radius:50%;border:1px solid var(--line);
+      background:transparent;color:var(--ink);cursor:pointer;
+      display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem;
+    }
+    .icon-btn:hover{border-color:var(--accent)}
+    .menu-toggle{display:none}
+
+    /* ============ Hero ============ */
+    .hero{padding:clamp(2.5rem,6vw,4.5rem) 0 clamp(3rem,7vw,5rem);position:relative}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+    .hero .kicker{
+      display:inline-flex;align-items:center;gap:.55rem;
+      font-size:.8rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-text);
+      margin-bottom:1.1rem;
+    }
+    .hero .kicker::before{content:"";width:2.2rem;height:2px;background:var(--accent);border-radius:2px}
+    .hero h1{font-size:clamp(2.5rem,5.4vw,4.1rem);font-weight:800;margin-bottom:1.1rem}
+    .hero h1 .mate{color:var(--accent-text)}
+    .hero .lede{font-size:1.15rem;color:var(--muted);max-width:32rem;margin-bottom:1.8rem}
+    .hero .lede strong{color:var(--ink)}
+    .hero-cta{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.6rem}
+    .hero-note{font-size:.9rem;color:var(--faint);display:flex;align-items:center;gap:.5rem}
+    .hero-note .dot{width:7px;height:7px;border-radius:50%;background:#4caf50;box-shadow:0 0 8px #4caf50}
+    .hero-art{position:relative}
+    .hero-art .frame{
+      border-radius:var(--radius-l);overflow:hidden;box-shadow:var(--shadow);
+      border:1px solid var(--line);background:var(--surface);
+    }
+    .hero-art img{width:100%;height:auto;aspect-ratio:16/11;object-fit:cover;display:block}
+    .hero-badge{
+      position:absolute;left:-14px;bottom:26px;
+      display:flex;align-items:center;gap:.7rem;
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);
+      padding:.7rem .95rem;box-shadow:var(--shadow);
+    }
+    .hero-badge .brand-mark{width:40px;height:40px;border-radius:8px}
+    .hero-badge .t{font-family:var(--font-display);font-weight:800;font-size:.95rem;line-height:1.25}
+    .hero-badge .s{font-size:.78rem;color:var(--faint)}
+
+    /* ============ Ticker ============ */
+    .ticker{background:#0b0a0a;color:#ece9e3;overflow:hidden;border-top:1px solid #221d1c;border-bottom:1px solid #221d1c;padding:0}
+    .ticker-track{display:flex;gap:0;white-space:nowrap;animation:tick 30s linear infinite;width:max-content;padding:.95rem 0}
+    .ticker-track span{padding:0 1.6rem;font-family:var(--font-display);font-weight:650;letter-spacing:.14em;text-transform:uppercase;font-size:.88rem}
+    .ticker-track .sep{color:var(--accent);padding:0}
+    @keyframes tick{to{transform:translateX(-50%)}}
+    @media (prefers-reduced-motion: reduce){ .ticker-track{animation:none} }
+
+    /* ============ Section heads ============ */
+    .sec-head{max-width:46rem;margin-bottom:clamp(1.8rem,4vw,2.8rem)}
+    .sec-head h2{font-size:clamp(1.9rem,3.6vw,2.6rem);margin-bottom:.7rem}
+    .sec-head p{color:var(--muted);margin:0;max-width:38rem}
+    .kicker-sm{font-size:.78rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-text);margin-bottom:.6rem;display:block}
+
+    /* ============ Who we serve ============ */
+    .aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.15rem}
+    .aud-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-l);
+      padding:1.5rem 1.4rem;display:flex;flex-direction:column;gap:.6rem;
+      transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+    }
+    .aud-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:var(--shadow)}
+    .aud-label{font-family:var(--font-display);font-weight:800;font-size:1.3rem;color:var(--accent-text)}
+    .aud-card h3{font-size:1.3rem}
+    .aud-card p{color:var(--muted);font-size:.96rem;margin:0}
+
+    /* ============ Mission ============ */
+    .drop-card{
+      max-width:44rem;margin:0 auto;background:var(--surface);border:1px solid var(--line);
+      border-radius:var(--radius-l);padding:clamp(1.7rem,4vw,2.7rem);text-align:center;box-shadow:var(--shadow);
+    }
+    .drop-status{
+      display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+      color:var(--accent-text);border:1px solid var(--accent);border-radius:999px;padding:.42rem 1.05rem;margin-bottom:1.2rem;
+    }
+    .drop-card h3{font-size:clamp(1.45rem,3vw,1.9rem);margin-bottom:.8rem}
+    .drop-card p{color:var(--muted);max-width:34rem;margin:0 auto 1.7rem}
+    .drop-cta{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+    .drop-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.15rem;margin:1.6rem auto 0;max-width:62rem}
+    .step{display:flex;gap:.95rem;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);padding:1.15rem 1.25rem}
+    .step .num{font-family:var(--font-display);font-weight:800;font-size:1.35rem;color:var(--accent-text);line-height:1.15}
+    .step strong{display:block;margin-bottom:.25rem;font-size:1rem}
+    .step p{margin:0;font-size:.92rem;color:var(--muted)}
+
+    /* ============ Why VICTMATE ============ */
+    .why-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+    .why-sticky{position:sticky;top:110px}
+    .why-sticky h2{font-size:clamp(2rem,3.8vw,2.8rem);margin-bottom:.9rem}
+    .why-sticky p{color:var(--muted)}
+    .value{padding:1.7rem 0;border-top:1px solid var(--line);display:grid;grid-template-columns:3.4rem 1fr;gap:1rem}
+    .value:last-child{border-bottom:1px solid var(--line)}
+    .value .num{font-family:var(--font-display);font-weight:800;font-size:1.5rem;color:var(--accent-text)}
+    .value h3{font-size:1.25rem;margin-bottom:.4rem}
+    .value p{color:var(--muted);margin:0;font-size:.99rem}
+
+    /* ============ Contact ============ */
+    .launch{
+      background:linear-gradient(180deg,var(--bg-2),var(--bg));
+      border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    }
+    .launch-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+    .launch h2{font-size:clamp(2rem,3.8vw,2.7rem);margin-bottom:.9rem}
+    .launch p{color:var(--muted)}
+    .launch ul{list-style:none;padding:0;margin:1.4rem 0 0;display:grid;gap:.7rem}
+    .launch ul li{display:flex;gap:.7rem;align-items:flex-start;font-size:.97rem}
+    .launch ul svg{flex:none;margin-top:.28rem;color:var(--accent-text)}
+    .form-card{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-l);
+      padding:clamp(1.4rem,3vw,2.2rem);box-shadow:var(--shadow);
+    }
+    .form-card h3{font-size:1.3rem;margin-bottom:.4rem}
+    .form-card .hint{font-size:.9rem;color:var(--faint);margin-bottom:1.3rem}
+    .field{margin-bottom:1rem}
+    .field label{display:block;font-size:.86rem;font-weight:700;margin-bottom:.4rem}
+    .field input,.field textarea{
+      width:100%;padding:.78rem .95rem;border-radius:var(--radius-s);
+      border:1px solid var(--line);background:var(--bg);color:var(--ink);
+      font-family:var(--font-body);font-size:1rem;transition:border-color .18s ease;
+    }
+    .field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+    .field textarea{resize:vertical;min-height:6.5rem;line-height:1.55}
+    .field .err{color:var(--accent-text);font-size:.83rem;margin-top:.3rem;display:none}
+    .field.invalid input,.field.invalid textarea{border-color:var(--accent)}
+    .field.invalid .err{display:block}
+    .form-card .fine{font-size:.8rem;color:var(--faint);margin-top:.9rem}
+    .form-ok{display:none;text-align:center;padding:1.5rem .5rem}
+    .form-ok .big{font-size:2.2rem;margin-bottom:.6rem}
+    .form-ok h3{margin-bottom:.5rem}
+    .form-ok p{color:var(--muted);font-size:.95rem;margin-bottom:1.2rem}
+    .form-card.sent form{display:none}
+    .form-card.sent .form-ok{display:block}
+
+    /* ============ FAQ ============ */
+    .faq-list{max-width:44rem}
+    details.faq{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);margin-bottom:.8rem;overflow:hidden}
+    details.faq summary{
+      list-style:none;cursor:pointer;padding:1.1rem 1.3rem;font-weight:700;font-size:1.02rem;
+      display:flex;justify-content:space-between;align-items:center;gap:1rem;
+    }
+    details.faq summary::-webkit-details-marker{display:none}
+    details.faq summary .plus{font-size:1.4rem;font-weight:400;color:var(--accent-text);transition:transform .2s ease;flex:none}
+    details.faq[open] summary .plus{transform:rotate(45deg)}
+    details.faq .a{padding:0 1.3rem 1.2rem;color:var(--muted);font-size:.98rem}
+    details.faq .a p:last-child{margin-bottom:0}
+
+    /* ============ Footer ============ */
+    footer{padding:3.5rem 0 2rem;border-top:1px solid var(--line);background:var(--bg-2)}
+    .foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2.5rem}
+    .foot-brand p{color:var(--muted);font-size:.93rem;margin-top:1rem;max-width:22rem}
+    .foot-col h4{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin:0 0 1rem}
+    .foot-col ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
+    .foot-col a{text-decoration:none;color:var(--muted);font-size:.95rem}
+    .foot-col a:hover{color:var(--accent-text)}
+    .foot-bottom{border-top:1px solid var(--line);padding-top:1.6rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;font-size:.85rem;color:var(--faint)}
+    .foot-bottom .legal{display:flex;gap:1.2rem}
+    .foot-bottom button{background:none;border:0;color:var(--faint);font:inherit;cursor:pointer;padding:0}
+    .foot-bottom button:hover{color:var(--accent-text)}
+
+    /* ============ Modal ============ */
+    .modal-overlay{
+      position:fixed;inset:0;z-index:100;background:rgba(5,4,4,.72);
+      backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:1rem;
+      opacity:0;transition:opacity .22s ease;
+    }
+    .modal-overlay.open{display:flex}
+    .modal-overlay.show{opacity:1}
+    .modal{
+      background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-l);
+      max-width:620px;width:100%;max-height:90vh;overflow:auto;box-shadow:var(--shadow);
+      transform:translateY(12px);transition:transform .22s ease;
+    }
+    .modal-overlay.show .modal{transform:translateY(0)}
+    .modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding:1.5rem 1.6rem 0}
+    .modal-head h3{font-size:1.55rem;padding-right:.5rem}
+    .modal-x{background:var(--surface-2);border:1px solid var(--line);color:var(--ink);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:1.15rem;flex:none;line-height:1}
+    .modal-x:hover{border-color:var(--accent)}
+    .modal-body{padding:1.1rem 1.6rem 1.8rem}
+    .modal-desc{color:var(--muted);font-size:.99rem}
+    .modal-desc p{margin-bottom:.8rem}
+
+    /* ============ Responsive ============ */
+    @media (max-width:900px){
+      .announce .wrap{flex-wrap:wrap;row-gap:0}
+      .announce span:first-child{flex:1 1 100%}
+      .nav a.nav-link,.nav .btn-primary{display:none}
+      .menu-toggle{display:inline-flex}
+      .nav.mobile-open{
+        position:fixed;top:70px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);
+        flex-direction:column;align-items:stretch;padding:1rem 1.5rem 1.5rem;gap:.2rem;z-index:60;
+      }
+      .nav.mobile-open a.nav-link,.nav.mobile-open .btn-primary{display:flex;padding:.8rem 0}
+      .nav.mobile-open .btn-primary{margin-top:.7rem;justify-content:center}
+      .nav.mobile-open a.nav-link{border-bottom:1px solid var(--line)}
+      .hero-grid,.why-grid,.launch-grid{grid-template-columns:1fr}
+      .why-sticky{position:static}
+      .aud-grid{grid-template-columns:repeat(2,1fr)}
+      .drop-steps{grid-template-columns:1fr;max-width:32rem}
+      .foot-grid{grid-template-columns:1fr 1fr}
+      .hero-art{order:-1}
+      .hero-art img{aspect-ratio:16/10}
+      .hero-badge{left:10px}
+    }
+    @media (max-width:520px){
+      .foot-grid{grid-template-columns:1fr}
+      .aud-grid{grid-template-columns:1fr}
+      .hero-cta .btn{flex:1;justify-content:center}
+      .modal-body{padding:1rem 1.15rem 1.5rem}
+    }
+  </style>
+</head>
+<body>
+  <!-- Announcement -->
+  <div class="announce" id="announce">
+    <div class="wrap">
+      <span>VICTMATE — your mate on the road to victory.</span>
+      <a href="#contact">Get in touch</a>
+      <button type="button" id="announceClose" aria-label="Dismiss announcement">&times;</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="VICTMATE home">
+        <span class="brand-mark"><img src="data:image/jpeg;base64,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" alt="VICTMATE logo" /></span>
+        <span>VICTMATE<small>mate &middot; victory</small></span>
+      </a>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a class="nav-link" href="#audience">Who we serve</a>
+        <a class="nav-link" href="#mission">Our mission</a>
+        <a class="nav-link" href="#why">Why VICTMATE</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+      </nav>
+      <button type="button" class="icon-btn" id="themeToggle" aria-label="Switch color theme" title="Switch color theme">
+        <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+      </button>
+      <button type="button" class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="kicker">software &middot; productivity &middot; language skills</span>
+          <h1>Your <span class="mate">mate</span> on the road to <span class="mate">victory</span>.</h1>
+          <p class="lede">VICTMATE builds <strong>useful software for individuals and companies</strong> — tools that boost the productivity of <strong>students, employees, business people and freelancers</strong>, and help them <strong>improve their language skills</strong>.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#mission">Our mission</a>
+            <a class="btn btn-ghost" href="#audience">Who we serve</a>
+          </div>
+          <p class="hero-note"><span class="dot"></span> We read every message at <a href="mailto:victmate@outlook.com" style="color:var(--accent-text);text-decoration:none;font-weight:700">victmate@outlook.com</a></p>
+        </div>
+        <div class="hero-art">
+          <div class="frame">
+            <img src="hero.svg" alt="Bold crimson geometric artwork on black: rising angular planes with a glowing diamond above them" />
+          </div>
+          <div class="hero-badge">
+            <span class="brand-mark"><img src="data:image/jpeg;base64,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" alt="" /></span>
+            <span><span class="t">VICTMATE</span><br /><span class="s">Mission: productivity &amp; language skills</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Students</span><span class="sep">&diams;</span><span>Employees</span><span class="sep">&diams;</span><span>Business people</span><span class="sep">&diams;</span><span>Freelancers</span><span class="sep">&diams;</span><span>Productivity tools</span><span class="sep">&diams;</span><span>Language skills</span><span class="sep">&diams;</span>
+        <span>Students</span><span class="sep">&diams;</span><span>Employees</span><span class="sep">&diams;</span><span>Business people</span><span class="sep">&diams;</span><span>Freelancers</span><span class="sep">&diams;</span><span>Productivity tools</span><span class="sep">&diams;</span><span>Language skills</span><span class="sep">&diams;</span>
+      </div>
+    </div>
+
+    <!-- Who we serve -->
+    <section id="audience">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker-sm">Who we serve</span>
+          <h2>Four audiences. One promise: your hours go further.</h2>
+          <p>VICTMATE software is designed around how real people work and study — tools meant to raise the productivity of the people below, and to sharpen their language skills along the way.</p>
+        </div>
+        <div class="aud-grid">
+          <div class="aud-card">
+            <span class="aud-label">01</span>
+            <h3>Students</h3>
+            <p>Study systems and focus tools that turn revision hours into real understanding — plus language skills that open doors beyond campus.</p>
+          </div>
+          <div class="aud-card">
+            <span class="aud-label">02</span>
+            <h3>Employees</h3>
+            <p>Working-day helpers that clear the busywork, so the day leaves room for growth and for stronger communication at work.</p>
+          </div>
+          <div class="aud-card">
+            <span class="aud-label">03</span>
+            <h3>Business people</h3>
+            <p>Decision support and time systems for people who run things — because running a company shouldn't mean losing your week to it.</p>
+          </div>
+          <div class="aud-card">
+            <span class="aud-label">04</span>
+            <h3>Freelancers</h3>
+            <p>Plain, honest tooling for client work, planning and visibility — with the language skills to win projects anywhere in the world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our mission -->
+    <section id="mission" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker-sm">Our mission</span>
+          <h2>What VICTMATE stands for</h2>
+          <p>Every decision we make gets measured against these three goals.</p>
+        </div>
+        <div class="drop-card">
+          <span class="drop-status">The mission</span>
+          <h3>Useful software, honest work, real progress.</h3>
+          <p>VICTMATE builds <strong>useful software for individuals and companies</strong>: tools that lift the <strong>productivity of students, employees, business people and freelancers</strong> — and help them <strong>improve their language skills</strong>. Our standard: practical tools, never gimmicks — software that earns a place in a real daily routine.</p>
+          <div class="drop-cta">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="mailto:victmate@outlook.com?subject=Idea%20for%20VICTMATE">Send an idea</a>
+          </div>
+        </div>
+        <div class="drop-steps">
+          <div class="step"><span class="num">1</span><div><strong>Useful software</strong><p>For individuals and companies: practical tools, never gimmicks — built to earn their place in a daily routine.</p></div></div>
+          <div class="step"><span class="num">2</span><div><strong>Real productivity</strong><p>Lifting students, employees, business people and freelancers above the grind — systems that make hours count.</p></div></div>
+          <div class="step"><span class="num">3</span><div><strong>Language skills</strong><p>Tools that sharpen communication — because the better you speak and write, the more the world opens up.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why VICTMATE -->
+    <section id="why">
+      <div class="wrap why-grid">
+        <div class="why-sticky">
+          <span class="kicker-sm">Why VICTMATE</span>
+          <h2>Every victory starts long before it counts.</h2>
+          <p>VICTMATE exists for one reason: to build software that makes ambition productive. Not gimmicky apps — useful tools for individuals and companies, aimed at the people who need every hour to count: students, employees, business people and freelancers. We work carefully and honestly, in the open, alongside the people the software is built for.</p>
+        </div>
+        <div>
+          <div class="value">
+            <span class="num">01</span>
+            <div>
+              <h3>Productivity is the point</h3>
+              <p>Every tool starts from one question: does it buy back hours or sharpen skills? If it can't answer yes, it doesn't get built.</p>
+            </div>
+          </div>
+          <div class="value">
+            <span class="num">02</span>
+            <div>
+              <h3>Language is leverage</h3>
+              <p>Communication multiplies every career. Part of our mission is to help students, employees, business people and freelancers write, speak and present better.</p>
+            </div>
+          </div>
+          <div class="value">
+            <span class="num">03</span>
+            <div>
+              <h3>Individuals and companies</h3>
+              <p>The same craft should serve one person and one team: tools simple enough for a student's desk and solid enough for an organization's workflow.</p>
+            </div>
+          </div>
+          <div class="value">
+            <span class="num">04</span>
+            <div>
+              <h3>Built in the open</h3>
+              <p>No secrecy, no manufactured hype. The people who use the software help shape it — that's what keeps it honest and useful.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="launch" id="contact">
+      <div class="wrap launch-grid">
+        <div>
+          <span class="kicker-sm">Contact</span>
+          <h2>Say hello.</h2>
+          <p>Questions about VICTMATE, an idea for a tool, or honest feedback — write to us. We read every message.</p>
+          <ul>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Questions about VICTMATE and its mission</span></li>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Ideas for tools that would make your work or study better</span></li>
+            <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Honest feedback — tell us how we are doing</span></li>
+          </ul>
+        </div>
+        <div class="form-card" id="contactCard">
+          <form id="contactForm" novalidate>
+            <h3>Contact VICTMATE</h3>
+            <p class="hint">Write your message — we'll open your mail app with everything pre-filled, so you're in control.</p>
+            <div class="field" id="cNameW"><label for="cName">First name</label><input id="cName" name="name" type="text" autocomplete="given-name" placeholder="Alex" /><div class="err">Please tell us your first name.</div></div>
+            <div class="field" id="cEmailW"><label for="cEmail">Email address</label><input id="cEmail" name="email" type="email" autocomplete="email" placeholder="alex@example.com" /><div class="err">Please enter a valid email address.</div></div>
+            <div class="field" id="cMsgW"><label for="cMsg">Your message</label><textarea id="cMsg" name="message" rows="4" placeholder="Hi VICTMATE…"></textarea><div class="err">Please write your message.</div></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Send message</button>
+            <p class="fine">Your message goes straight to <strong>victmate@outlook.com</strong>. We never share your address.</p>
+          </form>
+          <div class="form-ok" role="status">
+            <div class="big">&check;</div>
+            <h3>Almost sent, mate.</h3>
+            <p>We prepared an email to <strong>victmate@outlook.com</strong> — your mail app should have opened. Just press send and it's on its way.</p>
+            <button type="button" class="btn btn-ghost" id="contactAgain">Edit my details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="kicker-sm">Questions</span>
+          <h2>Straight answers.</h2>
+          <p>Straight answers to the questions we're asked most.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq"><summary>What is VICTMATE?<span class="plus">+</span></summary><div class="a"><p>A software project built around one mission: <strong>useful software for individuals and companies</strong> — tools that raise the productivity of students, employees, business people and freelancers, and that help them improve their language skills. Its motto says it best: <em>your mate on the road to victory</em>.</p></div></details>
+          <details class="faq"><summary>What does VICTMATE mean by &ldquo;useful software&rdquo;?<span class="plus">+</span></summary><div class="a"><p>Software that earns a place in a real daily routine: practical, honest, and built to buy back hours — never gimmicks, never clutter. If a tool doesn't make someone's day genuinely better, it doesn't carry the VICTMATE name.</p></div></details>
+          <details class="faq"><summary>Who does VICTMATE software serve?<span class="plus">+</span></summary><div class="a"><p>Four audiences: students, employees, business people and freelancers. For them, VICTMATE builds productivity tools — including helpers for better communication and language skills — that meet them where they actually work and study.</p></div></details>
+          <details class="faq"><summary>How does VICTMATE think about pricing?<span class="plus">+</span></summary><div class="a"><p>One principle: simple and honest — no hidden tiers, no manufactured scarcity.</p></div></details>
+          <details class="faq"><summary>Can I suggest a tool or an idea?<span class="plus">+</span></summary><div class="a"><p>Please do — the best ideas come from real frustrations. Send them to <a href="mailto:victmate@outlook.com?subject=Idea%20for%20VICTMATE">victmate@outlook.com</a>; we read and consider every idea we receive.</p></div></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="#top" aria-label="VICTMATE home">
+            <span class="brand-mark"><img src="data:image/jpeg;base64,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" alt="" /></span>
+            <span>VICTMATE<small>mate &middot; victory</small></span>
+          </a>
+          <p>Your mate on the road to victory. Useful software for individuals and companies — real productivity, sharper language skills.</p>
+        </div>
+        <div class="foot-col">
+          <h4>Project</h4>
+          <ul>
+            <li><a href="#audience">Who we serve</a></li>
+            <li><a href="#mission">Our mission</a></li>
+            <li><a href="#why">Why VICTMATE</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#why">Why VICTMATE</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:victmate@outlook.com">victmate@outlook.com</a></li>
+            <li><a href="mailto:victmate@outlook.com?subject=Idea%20for%20VICTMATE">Suggest an idea</a></li>
+            <li><a href="mailto:victmate@outlook.com?subject=Support%20request%20—%20VICTMATE">Ask for support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>&copy; 2026 VICTMATE. All rights reserved.</span>
+        <span class="legal">
+          <button type="button" id="openPrivacy">Privacy</button>
+          <button type="button" id="openTerms">Terms</button>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Privacy modal -->
+  <div class="modal-overlay" id="privacyOverlay" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="modal">
+      <div class="modal-head">
+        <h3 id="privacyTitle">Privacy</h3>
+        <button type="button" class="modal-x" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-desc">
+          <p>This website collects nothing automatically. There are no accounts, no tracking pixels, no analytics, and no databases.</p>
+          <p>If you contact us, your name, email and message go only to <strong>victmate@outlook.com</strong> so we can reply. That's the entire dataset. We never sell, rent or share addresses.</p>
+          <p>Questions about privacy? Write to <strong>victmate@outlook.com</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms modal -->
+  <div class="modal-overlay" id="termsOverlay" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+    <div class="modal">
+      <div class="modal-head">
+        <h3 id="termsTitle">Terms</h3>
+        <button type="button" class="modal-x" data-close aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-desc">
+          <p>This page describes VICTMATE's mission and goals. Everything here is general information — not an offer, a contract, or a product.</p>
+          <p>Contacting us is free and non-binding — your details are used only so we can reply.</p>
+          <p>All artwork, names and texts on this site are the property of VICTMATE. Questions? Write to <strong>victmate@outlook.com</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  (function(){
+    "use strict";
+    var CONTACT = "victmate@outlook.com";
+    function $(s, c){ return (c||document).querySelector(s); }
+    function $all(s, c){ return Array.prototype.slice.call((c||document).querySelectorAll(s)); }
+
+    /* ---------- Header scroll state ---------- */
+    var header = $("#siteHeader");
+    function onScroll(){ header.classList.toggle("scrolled", window.scrollY > 8); }
+    window.addEventListener("scroll", onScroll, {passive:true});
+    onScroll();
+
+    /* ---------- Announcement ---------- */
+    var announce = $("#announce");
+    $("#announceClose").addEventListener("click", function(){ announce.style.display = "none"; });
+
+    /* ---------- Theme (in-memory only) ---------- */
+    var root = document.documentElement, themeBtn = $("#themeToggle"), themeIcon = $("#themeIcon");
+    var ICON_SUN = '<circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M19.4 4.6l-1.8 1.8M6.4 17.6l-1.8 1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+    var ICON_MOON = '<path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>';
+    function renderTheme(){
+      var dark = root.getAttribute("data-theme") !== "light";
+      themeIcon.innerHTML = dark ? ICON_SUN : ICON_MOON;
+      themeBtn.setAttribute("aria-label", dark ? "Switch to light theme" : "Switch to dark theme");
+    }
+    themeBtn.addEventListener("click", function(){
+      var next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+      root.setAttribute("data-theme", next);
+      renderTheme();
+    });
+    renderTheme();
+
+    /* ---------- Mobile nav ---------- */
+    var nav = $("#mainNav"), menuToggle = $("#menuToggle");
+    menuToggle.addEventListener("click", function(){
+      var open = nav.classList.toggle("mobile-open");
+      menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      menuToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    });
+    $all("a", nav).forEach(function(a){
+      a.addEventListener("click", function(){
+        nav.classList.remove("mobile-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    /* ---------- Modals (privacy & terms) ---------- */
+    var lastFocus = null;
+
+    function openModal(ov){
+      lastFocus = document.activeElement;
+      ov.classList.add("open");
+      requestAnimationFrame(function(){ requestAnimationFrame(function(){ ov.classList.add("show"); }); });
+      document.body.style.overflow = "hidden";
+      var x = ov.querySelector(".modal-x");
+      if(x) x.focus();
+    }
+    function closeModal(ov){
+      ov.classList.remove("show");
+      setTimeout(function(){ ov.classList.remove("open"); document.body.style.overflow = ""; }, 220);
+      if(lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+    $all(".modal-overlay").forEach(function(ov){
+      ov.addEventListener("click", function(e){ if(e.target === ov) closeModal(ov); });
+      $all("[data-close]", ov).forEach(function(b){ b.addEventListener("click", function(){ closeModal(ov); }); });
+    });
+    document.addEventListener("keydown", function(e){
+      if(e.key === "Escape"){ $all(".modal-overlay.open").forEach(closeModal); }
+    });
+
+    /* ---------- Mailto composer ---------- */
+    function mailtoUrl(subject, body){
+      return "mailto:" + CONTACT + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+    }
+    function validEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
+
+    var contactForm = $("#contactForm"), contactCard = $("#contactCard");
+    contactForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = $("#cName").value.trim(), email = $("#cEmail").value.trim(), msg = $("#cMsg").value.trim();
+      $("#cNameW").classList.toggle("invalid", !name);
+      $("#cEmailW").classList.toggle("invalid", !validEmail(email));
+      $("#cMsgW").classList.toggle("invalid", !msg);
+      if(!name || !validEmail(email) || !msg) return;
+      var subject = "Message for VICTMATE — from " + name;
+      var body = msg + "\n\n— " + name + " (" + email + ")";
+      window.location.href = mailtoUrl(subject, body);
+      contactCard.classList.add("sent");
+    });
+    $("#contactAgain").addEventListener("click", function(){
+      contactCard.classList.remove("sent");
+      $("#cMsg").focus();
+    });
+
+
+    /* ---------- Privacy / Terms ---------- */
+    $("#openPrivacy").addEventListener("click", function(){ openModal($("#privacyOverlay")); });
+    $("#openTerms").addEventListener("click", function(){ openModal($("#termsOverlay")); });
+  })();
+  </script>
+</body>
+</html>
