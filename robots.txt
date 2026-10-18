@@ -1,0 +1,7 @@
+# robots.txt for VICTMATE — https://victmate.github.io/
+# Allow all crawlers to index the whole site.
+User-agent: *
+Allow: /
+
+# Sitemap (submit this URL in Google Search Console and Bing Webmaster Tools too)
+Sitemap: https://victmate.github.io/sitemap.xml
